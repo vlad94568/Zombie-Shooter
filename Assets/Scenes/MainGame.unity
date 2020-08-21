@@ -400,7 +400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932fbbf6015bda84ca2b3915518b7505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 250514632553403563, guid: 99e9c1ca2929af54c8d733dfa95efd74, type: 3}
+  bullet: {fileID: 4697305628652964556, guid: 47fbccd2b3d6dce4795c387a9f5b84fd, type: 3}
   bulletLaunch: {fileID: 1188219578}
 --- !u!1 &1188219577
 GameObject:
