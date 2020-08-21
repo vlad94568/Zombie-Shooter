@@ -14,8 +14,12 @@ public class GunScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        Instantiate(bullet, new Vector3(bulletLaunch.position.x, bulletLaunch.position.y, bulletLaunch.position.z), bulletLaunch.rotation);
+        if(Input.GetMouseButtonDown(0))
+        {
+
+            Instantiate(bullet, new Vector3(bulletLaunch.position.x, bulletLaunch.position.y, bulletLaunch.position.z), bulletLaunch.rotation);
+
+        }
         
     }
 }
