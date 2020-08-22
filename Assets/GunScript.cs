@@ -2,7 +2,6 @@
 
 public class GunScript : MonoBehaviour
 {
-
     public Transform bullet;
     public Transform bulletLaunch;
 

@@ -2,11 +2,9 @@
 
 public class BulletScript : MonoBehaviour
 {
-
     public float speed = 12f;
 
-    //These will be upgradable : 
-
+    // These will be upgradable: 
     public float damage = 10f;
     public float range = 10f;
     public float shootSpeed = 0.2f;
@@ -22,6 +20,5 @@ public class BulletScript : MonoBehaviour
     void Update()
     {
         transform.position += -transform.up * Time.deltaTime * speed;
-
     }
 }
