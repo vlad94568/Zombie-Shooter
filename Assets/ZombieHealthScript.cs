@@ -5,29 +5,21 @@ public class ZombieHealthScript : MonoBehaviour
 
     public float health = 100f;
 
-    void Start()
+    private void OnTriggerEnter2D(Collider2D other) 
     {
-        
+
+        if (other.tag == "Bullet")
+        {
+            Object.Destroy(this.gameObject);
+        }
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
-
-    void OnCollisionEnter(Collision collision)
-    {
-        
-         if (collision.gameObject.tag == "Bullet")
-         {
-
-             Debug.Log("Bullet Hit Zombie.");
-
-         }
-
-    }
 
 
 
 }
+
+
+
+
