@@ -11,6 +11,7 @@ public class ZombieHealthScript : MonoBehaviour
         if (other.tag == "Bullet")
         {
             Object.Destroy(this.gameObject);
+            Object.Destroy(other.gameObject);
         }
 
     }
