@@ -2,15 +2,12 @@
 
 public class ZombieHealthScript : MonoBehaviour
 {
-
     public float health = 100f;
 
     public GameObject explosion;
 
-
     private void OnTriggerEnter2D(Collider2D other) 
     {
-
         if (other.tag == "Bullet")
         {
             health -= other.GetComponent<BulletScript> ().damage;
@@ -25,12 +22,7 @@ public class ZombieHealthScript : MonoBehaviour
             }
 
         }
-
     }
-
-
-
-
 }
 
 
