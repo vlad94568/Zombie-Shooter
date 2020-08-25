@@ -13,11 +13,17 @@ public class ZombieHealthScript : MonoBehaviour
 
         if (other.tag == "Bullet")
         {
-            GameObject boom = Instantiate(explosion, this.transform.position, Quaternion.identity);
-            boom.GetComponent<ParticleSystem>().Play();
+            health -= other.GetComponent<BulletScript> ().damage;
 
-            Object.Destroy(this.gameObject);
             Object.Destroy(other.gameObject);
+
+            if (health <=0)
+            {
+                GameObject boom = Instantiate(explosion, this.transform.position, Quaternion.identity);
+                boom.GetComponent<ParticleSystem>().Play();
+                Object.Destroy(this.gameObject);
+            }
+
         }
 
     }
