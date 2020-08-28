@@ -610,7 +610,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 432371766}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.07, y: 0.603, z: -10.285212}
+  m_LocalPosition: {x: 0, y: 0, z: -10.285212}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1334234556}
@@ -846,7 +846,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.07, y: 0.603, z: -10.285212}
+  m_LocalPosition: {x: 0, y: 0, z: -10.285212}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -928,7 +928,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552112368}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.198, y: 0.029, z: -1.9756386}
+  m_LocalPosition: {x: 0.2, y: 0, z: 0}
   m_LocalScale: {x: 1.2064117, y: 0.4273453, z: 1.25}
   m_Children:
   - {fileID: 1188219578}
@@ -951,6 +951,7 @@ MonoBehaviour:
   bulletLaunch: {fileID: 1188219578}
   shootSound: {fileID: 1395439632}
   bulletsPerShoot: 1
+  timer: 0
 --- !u!1 &631015249
 GameObject:
   m_ObjectHideFlags: 0
@@ -1130,7 +1131,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044539258}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.58, y: 0, z: 0}
+  m_LocalPosition: {x: 6.66, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1158220726}
@@ -1154,7 +1155,7 @@ GameObject:
   - component: {fileID: 1158220727}
   m_Layer: 11
   m_Name: BasicZombie
-  m_TagString: Untagged
+  m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1289,6 +1290,7 @@ MonoBehaviour:
     type: 3}
   dead: {fileID: 332038821}
   hit: {fileID: 1853080594}
+  Damage: 10
 --- !u!1 &1188219577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1774,7 +1776,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1634675027}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.07, y: 0.603, z: -0.28521174}
+  m_LocalPosition: {x: 0, y: 0, z: -0.28521174}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 552112370}

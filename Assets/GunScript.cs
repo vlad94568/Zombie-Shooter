@@ -13,6 +13,10 @@ public class GunScript : MonoBehaviour
     public float bulletsPerShoot = 1f;
 
 
+    public float timer;
+
+    public float Delay = 0.3f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +25,19 @@ public class GunScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        timer += Time.deltaTime;
+
         if(Input.GetMouseButtonDown(0))
         {
 
-            shootSound.Play();
-            Instantiate(bullet, new Vector3(bulletLaunch.position.x, bulletLaunch.position.y, bulletLaunch.position.z), bulletLaunch.rotation);
+            if (timer >= Delay)
+            {
+                timer = 0;
+
+                shootSound.Play();
+                Instantiate(bullet, new Vector3(bulletLaunch.position.x, bulletLaunch.position.y, bulletLaunch.position.z), bulletLaunch.rotation);
+            }
 
         }
         
