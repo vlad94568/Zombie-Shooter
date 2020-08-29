@@ -952,6 +952,7 @@ MonoBehaviour:
   shootSound: {fileID: 1395439632}
   bulletsPerShoot: 1
   timer: 0
+  Delay: 0.3
 --- !u!1 &631015249
 GameObject:
   m_ObjectHideFlags: 0
@@ -1153,6 +1154,7 @@ GameObject:
   - component: {fileID: 1158220728}
   - component: {fileID: 1158220724}
   - component: {fileID: 1158220727}
+  - component: {fileID: 1158220729}
   m_Layer: 11
   m_Name: BasicZombie
   m_TagString: Zombie
@@ -1291,6 +1293,18 @@ MonoBehaviour:
   dead: {fileID: 332038821}
   hit: {fileID: 1853080594}
   Damage: 10
+--- !u!114 &1158220729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158220723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca3e546bfff8be540adc1b17b8dc66ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1188219577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1713,7 +1727,7 @@ GameObject:
   - component: {fileID: 1634675033}
   m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
