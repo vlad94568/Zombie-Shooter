@@ -16,17 +16,18 @@ public class ZombieAttack : MonoBehaviour
         
     }
 
-
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-
-        if (other.tag == "Player")
-        {
-
-            Debug.Log("REEEEEEEEEEEEEEEEEEEeeeeeeeeee");
-
-        }
-
+            Debug.Log("--> OnTriggerEnter2D");
     }
 
+    void OnTriggerExit2D(Collider2D other) 
+    {
+        Debug.Log("--> OnTriggerExit2D");
+    }
+
+    void OnTriggerStay2D(Collider2D other) 
+    {
+        Debug.Log("--> OnTriggerStay2D");
+    }
 }
