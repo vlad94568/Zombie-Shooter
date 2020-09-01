@@ -8,9 +8,7 @@ public class ZombieHealthScript : MonoBehaviour
 
     public AudioSource dead;
     public AudioSource hit;
-
-    public float Damage = 10f;
-
+    
     private void OnTriggerEnter2D(Collider2D other) 
     {
         if (other.tag == "Bullet")

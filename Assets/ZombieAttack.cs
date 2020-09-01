@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class ZombieAttack : MonoBehaviour
 {
+
+    public float Damage = 10f;
+
+    public GameObject Player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +24,8 @@ public class ZombieAttack : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
             Debug.Log("--> OnTriggerEnter2D");
+            
+            Player.GetComponent<PlayerController> ().currentHealth -= Damage;
     }
 
     void OnTriggerExit2D(Collider2D other) 
