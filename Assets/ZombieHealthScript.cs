@@ -6,6 +6,8 @@ public class ZombieHealthScript : MonoBehaviour
 
     public GameObject explosion;
 
+    public GameObject hitExplosion;
+
     public AudioSource dead;
     public AudioSource hit;
     
@@ -14,6 +16,9 @@ public class ZombieHealthScript : MonoBehaviour
         if (other.tag == "Bullet")
         {
             health -= other.GetComponent<BulletScript> ().damage;
+            
+            GameObject hitBoom = Instantiate(hitExplosion, other.transform.position, Quaternion.identity);
+            hitBoom.GetComponent<ParticleSystem>().Play();
 
             hit.Play();
 
