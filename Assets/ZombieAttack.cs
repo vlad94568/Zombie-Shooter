@@ -25,7 +25,10 @@ public class ZombieAttack : MonoBehaviour
     {
             Debug.Log("--> OnTriggerEnter2D");
             
-            Player.GetComponent<PlayerController> ().currentHealth -= Damage;
+            if (other.tag == "Player")
+            {
+                Player.GetComponent<PlayerController> ().currentHealth -= Damage;
+            }
     }
 
     void OnTriggerExit2D(Collider2D other) 
