@@ -5,7 +5,7 @@ using UnityEngine;
 public class ZombieAttack : MonoBehaviour
 {
 
-    public float Damage = 10f;
+    public float Damage;
 
     public GameObject Player;
 

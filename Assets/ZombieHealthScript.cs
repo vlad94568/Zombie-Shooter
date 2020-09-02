@@ -24,7 +24,7 @@ public class ZombieHealthScript : MonoBehaviour
                 GameObject boom = Instantiate(explosion, this.transform.position, Quaternion.identity);
                 dead.Play();
                 boom.GetComponent<ParticleSystem>().Play();
-                Object.Destroy(this.gameObject);
+                Object.Destroy(this.transform.parent.gameObject);
             }
 
         }
