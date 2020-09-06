@@ -9,6 +9,8 @@ public class ZombieAttack : MonoBehaviour
 
     public GameObject Player;
 
+    public GameObject playerHit;
+
     float time = 0;
 
     // Start is called before the first frame update
@@ -26,6 +28,7 @@ public class ZombieAttack : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
             Debug.Log("--> OnTriggerEnter2D");
+            
     }
 
     void OnTriggerExit2D(Collider2D other) 
@@ -38,9 +41,14 @@ public class ZombieAttack : MonoBehaviour
         Debug.Log("--> OnTriggerStay2D");
 
 
-        if ((other.tag == "Player") && time >= 1)
+        if ((other.tag == "Player") && time >= 0.5)
         {
+            GameObject playerBleed = Instantiate(playerHit, other.transform.position, Quaternion.identity);
+
             Player.GetComponent<PlayerController> ().currentHealth -= Damage;
+
+            playerBleed.GetComponent<ParticleSystem>().Play();
+
             time = 0;
         }
 

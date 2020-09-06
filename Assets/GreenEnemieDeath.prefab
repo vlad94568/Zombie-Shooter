@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3892975892585484214}
   - component: {fileID: 3892975892585484215}
   m_Layer: 0
-  m_Name: EnemieDeath
+  m_Name: GreenEnemieDeath
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4730,7 +4730,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
