@@ -9,6 +9,9 @@ public class BulletScript : MonoBehaviour
     public float range = 10f;
     public float shootSpeed = 0.2f;
     public float reloadTime = 2f;
+    float timer = 0f;
+
+    public float bulletLifeTime = 1;
 
 
     // Start is called before the first frame update
@@ -20,5 +23,13 @@ public class BulletScript : MonoBehaviour
     void Update()
     {
         transform.position += -transform.up * Time.deltaTime * speed;
+        timer += Time.deltaTime;
+
+        if (timer >= bulletLifeTime)
+        {
+
+            Object.Destroy(this.transform.gameObject);
+
+        }
     }
 }

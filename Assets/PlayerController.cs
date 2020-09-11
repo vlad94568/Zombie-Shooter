@@ -27,5 +27,12 @@ public class PlayerController : MonoBehaviour
         float y = Input.GetAxis("Vertical");
 
         this.transform.position = new Vector3(transform.position.x + (x * speed * Time.deltaTime), transform.position.y + (y * speed * Time.deltaTime), transform.position.z);
+
+        if (healthBar.value <= 0)
+        {   
+            // TODO make a new scene where the player died.
+
+            Debug.Log("The Player is DEAD, GAME OVER");
+        }
     }
 }
