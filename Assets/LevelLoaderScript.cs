@@ -20,10 +20,10 @@ public class LevelLoaderScript : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetMouseButtonDown(0))
-        {
-            LoadNextLevel();
-        }
+        //if (Input.GetMouseButtonDown(0))
+        //{
+         //   LoadNextLevel();
+       // }
 
     }
 
