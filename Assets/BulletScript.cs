@@ -11,7 +11,9 @@ public class BulletScript : MonoBehaviour
     public float reloadTime = 2f;
     float timer = 0f;
 
-    public float bulletLifeTime = 1;
+    public float bulletLifeTime = 2.7f;
+
+    public GameObject bulletDestroy;
 
 
     // Start is called before the first frame update
@@ -27,6 +29,8 @@ public class BulletScript : MonoBehaviour
 
         if (timer >= bulletLifeTime)
         {
+            GameObject bulletBoom = Instantiate(bulletDestroy, this.transform.position, Quaternion.identity);
+            bulletBoom.GetComponent<ParticleSystem>().Play();
 
             Object.Destroy(this.transform.gameObject);
 
