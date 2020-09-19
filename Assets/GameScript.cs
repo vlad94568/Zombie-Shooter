@@ -7,7 +7,7 @@ public class GameScript : MonoBehaviour
 
     float time = 0f;
 
-    public Transform basicZombie;
+    public GameObject basicZombie;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,8 @@ public class GameScript : MonoBehaviour
 
         if (time >= 5)
         {
-            Instantiate(basicZombie, new Vector3(Random.Range(-22, 32), Random.Range(8, -18)), basicZombie.rotation);
+            GameObject BasicClone = Instantiate(basicZombie, new Vector3(Random.Range(-22, 32), Random.Range(8, -18)), basicZombie.transform.rotation);
+            BasicClone.SetActive(true);
             time = 0;
         }
     }
