@@ -19,7 +19,7 @@ public class GameScript : MonoBehaviour
     {
         time += Time.deltaTime;
 
-        if (time >= 5)
+        if (time >= 0.1)
         {
             GameObject BasicClone = Instantiate(basicZombie, new Vector3(Random.Range(-22, 32), Random.Range(8, -18)), basicZombie.transform.rotation);
             BasicClone.SetActive(true);
