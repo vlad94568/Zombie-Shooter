@@ -10,11 +10,14 @@ public class PlayerController : MonoBehaviour
 
     public float currentHealth = 100f;
 
+    public float lastHealth;
+
     public Slider healthBar;
 
     // Start is called before the first frame update
     void Start()
     {
+        lastHealth = healthBar.value;
     }
 
     // Update is called once per frame
@@ -34,5 +37,12 @@ public class PlayerController : MonoBehaviour
 
             Debug.Log("The Player is DEAD, GAME OVER");
         }
+
+        if (lastHealth != healthBar.value)
+        {
+            GetComponent<SpriteRenderer>().color = new Color(1f,0.30196078f, 0.30196078f);
+            lastHealth = healthBar.value;
+        }
+
     }
 }
