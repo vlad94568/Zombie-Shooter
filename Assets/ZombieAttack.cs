@@ -13,6 +13,8 @@ public class ZombieAttack : MonoBehaviour
 
     float time = 0;
 
+    public float attackTimer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +32,7 @@ public class ZombieAttack : MonoBehaviour
         Debug.Log("--> OnTriggerStay2D");
 
 
-        if ((other.tag == "Player") && time >= 0.5)
+        if ((other.tag == "Player") && time >= attackTimer)
         {
             GameObject playerBleed = Instantiate(playerHit, other.transform.position, Quaternion.identity);
 

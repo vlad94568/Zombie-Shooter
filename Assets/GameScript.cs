@@ -9,6 +9,10 @@ public class GameScript : MonoBehaviour
 
     public GameObject basicZombie;
 
+    public GameObject fastZombie;
+
+    public GameObject strongZombie;
+
     // Start is called before the first frame update
     void Start()
     {
