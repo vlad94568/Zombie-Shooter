@@ -4969,7 +4969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0e38a977117dc5418ada2e1f31ef380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 4
   damage: 10
   range: 10
   shootSpeed: 0.2
