@@ -31,8 +31,8 @@ public class ZombieHealthScript : MonoBehaviour
             if (health <=0)
             {
                 GameObject boom = Instantiate(explosion, this.transform.position, Quaternion.identity);
-                AudioSource death = Instantiate(dead, this.transform.position, Quaternion.identity);
-                death.Play();
+                //AudioSource death = Instantiate(dead, this.transform.position, Quaternion.identity);
+                dead.Play();
                 boom.GetComponent<ParticleSystem>().Play();
 
                 ScoreScript scoreScript = scoreObject.GetComponent<ScoreScript>();
