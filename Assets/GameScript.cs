@@ -29,7 +29,6 @@ public class GameScript : MonoBehaviour
         {
             
             random = Random.Range(1, 9);
-            Debug.Log(random);
 
             //If statment for the normal zombie.
 
