@@ -15,6 +15,10 @@ public class GameScript : MonoBehaviour
 
     float random;
 
+    public float wait = 5;
+
+    float zombiesSpawned = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,11 +27,20 @@ public class GameScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        if (zombiesSpawned == 10)
+        {
+            zombiesSpawned = 0;
+            wait -= 0.2f;
+        }
+
         time += Time.deltaTime;
 
-        if (time >= 5)
+        if (time >= wait)
         {
             
+            zombiesSpawned += 1;
+
             random = Random.Range(1, 9);
 
             //If statment for the normal zombie.
