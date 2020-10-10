@@ -16,7 +16,50 @@ public class ZombieHealthScript : MonoBehaviour
     public GameObject scoreObject;
 
     public float scoreAmount;
+
+    float lastHealth;
+
+    float timer = 0;
+
+    public GameObject pathfinding;
+
+    float speed;
     
+    void Start()
+    {
+        lastHealth = health;
+
+        speed = pathfinding.GetComponent<Pathfinding.AIPath>().maxSpeed;
+    }
+
+
+    void Update()
+    {
+
+        if (lastHealth > health)
+        {
+
+            timer += Time.deltaTime;
+
+            pathfinding.GetComponent<Pathfinding.AIPath>().maxSpeed = 1;
+
+            pathfinding.transform.rotation = Random.rotation;
+
+            if (timer >= 0.1)
+            {
+                timer = 0;
+
+                lastHealth = health;
+
+                pathfinding.GetComponent<Pathfinding.AIPath>().maxSpeed = speed;
+
+            }
+
+
+        }
+    }
+
+
     private void OnTriggerEnter2D(Collider2D other) 
     {
         if (other.tag == "Bullet")

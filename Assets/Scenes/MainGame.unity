@@ -245,6 +245,7 @@ MonoBehaviour:
   hit: {fileID: 311686202}
   scoreObject: {fileID: 702402275}
   scoreAmount: 20
+  pathfinding: {fileID: 986193857}
 --- !u!212 &38746137
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -643,6 +644,7 @@ GameObject:
   - component: {fileID: 369601950}
   - component: {fileID: 369601949}
   - component: {fileID: 369601947}
+  - component: {fileID: 369601948}
   m_Layer: 10
   m_Name: Wall
   m_TagString: Map
@@ -676,6 +678,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &369601948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369601946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551d642ec4776254290741d6f7be9813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletDestroy: {fileID: 3892975892585484168, guid: f78e939fdc465a342b780a61d061e112,
+    type: 3}
 --- !u!212 &369601949
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1565,6 +1581,7 @@ GameObject:
   - component: {fileID: 876273751}
   - component: {fileID: 876273750}
   - component: {fileID: 876273749}
+  - component: {fileID: 876273752}
   m_Layer: 10
   m_Name: Wall (2)
   m_TagString: Map
@@ -1663,6 +1680,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &876273752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876273748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551d642ec4776254290741d6f7be9813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletDestroy: {fileID: 3892975892585484168, guid: f78e939fdc465a342b780a61d061e112,
+    type: 3}
 --- !u!1001 &895028022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1753,6 +1784,7 @@ GameObject:
   - component: {fileID: 946258188}
   - component: {fileID: 946258187}
   - component: {fileID: 946258186}
+  - component: {fileID: 946258189}
   m_Layer: 10
   m_Name: Wall (1)
   m_TagString: Map
@@ -1851,6 +1883,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &946258189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946258185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551d642ec4776254290741d6f7be9813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletDestroy: {fileID: 3892975892585484168, guid: f78e939fdc465a342b780a61d061e112,
+    type: 3}
 --- !u!1 &986193857
 GameObject:
   m_ObjectHideFlags: 0
@@ -2346,6 +2392,7 @@ MonoBehaviour:
   hit: {fileID: 1853080594}
   scoreObject: {fileID: 702402275}
   scoreAmount: 10
+  pathfinding: {fileID: 1044539258}
 --- !u!114 &1158220729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2805,6 +2852,7 @@ GameObject:
   - component: {fileID: 1441893114}
   - component: {fileID: 1441893113}
   - component: {fileID: 1441893112}
+  - component: {fileID: 1441893115}
   m_Layer: 10
   m_Name: Wall (3)
   m_TagString: Map
@@ -2903,6 +2951,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1441893115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441893111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551d642ec4776254290741d6f7be9813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletDestroy: {fileID: 3892975892585484168, guid: f78e939fdc465a342b780a61d061e112,
+    type: 3}
 --- !u!1 &1455080498
 GameObject:
   m_ObjectHideFlags: 0
@@ -3100,6 +3162,7 @@ MonoBehaviour:
   hit: {fileID: 1902805802}
   scoreObject: {fileID: 702402275}
   scoreAmount: 50
+  pathfinding: {fileID: 1071583207}
 --- !u!212 &1512786021
 SpriteRenderer:
   m_ObjectHideFlags: 0
