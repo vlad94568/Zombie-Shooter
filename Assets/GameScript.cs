@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class GameScript : MonoBehaviour
 {
-
-    float time = 0f;
-
     public GameObject basicZombie;
 
     public GameObject fastZombie;
@@ -15,24 +12,14 @@ public class GameScript : MonoBehaviour
 
     float random;
 
-    public float wait = 5;
+    public float startZombies;
 
     // Start is called before the first frame update
     void Start()
     {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-
-        time += Time.deltaTime;
-
-        if (time >= wait)
+        for (int i = 0; i < startZombies; i++)
         {
-
-            random = Random.Range(1, 9);
+            random = Random.Range(1, 8);
 
             //If statment for the normal zombie.
 
@@ -57,8 +44,6 @@ public class GameScript : MonoBehaviour
                 GameObject clone = Instantiate(strongZombie, new Vector3(Random.Range(-22, 32), Random.Range(8, -18)), strongZombie.transform.rotation);
                 clone.SetActive(true);
             }
-
-            time = 0;
         }
     }
 }

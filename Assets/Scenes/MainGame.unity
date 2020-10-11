@@ -3579,7 +3579,7 @@ MonoBehaviour:
   basicZombie: {fileID: 1044539258}
   fastZombie: {fileID: 986193857}
   strongZombie: {fileID: 1071583207}
-  wait: 5
+  startZombies: 50
 --- !u!4 &1673956682
 Transform:
   m_ObjectHideFlags: 0
