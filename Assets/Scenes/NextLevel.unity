@@ -247,7 +247,7 @@ MonoBehaviour:
   scoreObject: {fileID: 702402275}
   scoreAmount: 20
   pathfinding: {fileID: 986193857}
-  gameManager: {fileID: 1673956680}
+  gameManager: {fileID: 0}
 --- !u!212 &38746137
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -735,7 +735,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a139407a9e3b02f4fa1b90823b545bc3, type: 3}
-  m_Color: {r: 0.14150941, g: 0.12615697, b: 0.12615697, a: 1}
+  m_Color: {r: 0, g: 0.301291, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2020,7 +2020,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a139407a9e3b02f4fa1b90823b545bc3, type: 3}
-  m_Color: {r: 0.14150941, g: 0.12615697, b: 0.12615697, a: 1}
+  m_Color: {r: 0, g: 0.301291, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2250,18 +2250,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70fb8c5d0b8ffe14aaadef5aa6947bd7, type: 3}
---- !u!114 &895028023 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7952621527816008871, guid: 70fb8c5d0b8ffe14aaadef5aa6947bd7,
-    type: 3}
-  m_PrefabInstance: {fileID: 895028022}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f86e459161a118429cf6074832a34cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &946258185
 GameObject:
   m_ObjectHideFlags: 0
@@ -2348,7 +2336,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a139407a9e3b02f4fa1b90823b545bc3, type: 3}
-  m_Color: {r: 0.14150941, g: 0.12615697, b: 0.12615697, a: 1}
+  m_Color: {r: 0, g: 0.301291, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3071,7 +3059,7 @@ MonoBehaviour:
   scoreObject: {fileID: 702402275}
   scoreAmount: 10
   pathfinding: {fileID: 1044539258}
-  gameManager: {fileID: 1673956680}
+  gameManager: {fileID: 0}
 --- !u!114 &1158220729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3681,7 +3669,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a139407a9e3b02f4fa1b90823b545bc3, type: 3}
-  m_Color: {r: 0.14150941, g: 0.12615697, b: 0.12615697, a: 1}
+  m_Color: {r: 0, g: 0.301291, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3918,7 +3906,7 @@ MonoBehaviour:
   scoreObject: {fileID: 702402275}
   scoreAmount: 50
   pathfinding: {fileID: 1071583207}
-  gameManager: {fileID: 1673956680}
+  gameManager: {fileID: 0}
 --- !u!212 &1512786021
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4422,9 +4410,9 @@ MonoBehaviour:
   basicZombie: {fileID: 1044539258}
   fastZombie: {fileID: 986193857}
   strongZombie: {fileID: 1071583207}
-  startZombies: 5
+  startZombies: 10
   zombiesAlive: 0
-  LevelScript: {fileID: 895028023}
+  LevelScript: {fileID: 0}
 --- !u!4 &1673956682
 Transform:
   m_ObjectHideFlags: 0

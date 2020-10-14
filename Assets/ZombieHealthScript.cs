@@ -22,6 +22,8 @@ public class ZombieHealthScript : MonoBehaviour
 
     public GameObject pathfinding;
 
+    public GameObject gameManager;
+
     float speed;
     
     void Start()
@@ -40,7 +42,7 @@ public class ZombieHealthScript : MonoBehaviour
 
             timer += Time.deltaTime;
 
-            pathfinding.GetComponent<Pathfinding.AIPath>().maxSpeed = 1;
+            pathfinding.GetComponent<Pathfinding.AIPath>().maxSpeed = 1.5f;
 
             pathfinding.transform.rotation = Random.rotation;
 
@@ -74,6 +76,9 @@ public class ZombieHealthScript : MonoBehaviour
 
             if (health <=0)
             {
+
+                gameManager.GetComponent<GameScript> ().zombiesAlive -= 1;
+
                 GameObject boom = Instantiate(explosion, this.transform.position, Quaternion.identity);
                 AudioSource death = Instantiate(dead, this.transform.position, Quaternion.identity);
                 death.Play();

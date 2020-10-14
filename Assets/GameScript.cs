@@ -14,11 +14,19 @@ public class GameScript : MonoBehaviour
 
     public float startZombies;
 
+    public float zombiesAlive = 0;
+
+    public LevelLoaderScript LevelScript;
+
     // Start is called before the first frame update
     void Start()
     {
+
         for (int i = 0; i < startZombies; i++)
         {
+
+            zombiesAlive += 1;
+
             random = Random.Range(1, 8);
 
             //If statment for the normal zombie.
@@ -46,4 +54,15 @@ public class GameScript : MonoBehaviour
             }
         }
     }
+
+
+    void Update()
+    {
+        if(zombiesAlive == 0)
+        {
+            LevelScript.LoadNextLevel();
+        }
+    }
+
+
 }
