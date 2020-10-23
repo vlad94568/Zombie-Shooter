@@ -4969,7 +4969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  damage: 10
+  damage: 30
   range: 10
   shootSpeed: 0.2
   reloadTime: 2
