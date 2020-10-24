@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
 
     float colorChangeTimer = 0f;
 
+    public LevelLoaderScript LevelScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,8 +44,12 @@ public class PlayerController : MonoBehaviour
 
         if (healthBar.value <= 0)
         {   
-            // TODO make a new scene where the player died.
-            Debug.Log("The Player is DEAD, GAME OVER");
+            int lastLevelLoad = LevelScript.nextLevel;
+            LevelScript.nextLevel = 5;
+            LevelScript.LoadNextLevel();
+            LevelScript.nextLevel = lastLevelLoad;
+
+
         }
 
         if (currentHealth < lastHealth)
