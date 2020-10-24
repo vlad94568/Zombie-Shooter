@@ -2299,7 +2299,7 @@ MonoBehaviour:
   basicZombie: {fileID: 1044539258}
   fastZombie: {fileID: 986193857}
   strongZombie: {fileID: 1071583207}
-  startZombies: 5
+  startZombies: 10
   zombiesAlive: 0
   LevelScript: {fileID: 895028023}
 --- !u!4 &1673956682

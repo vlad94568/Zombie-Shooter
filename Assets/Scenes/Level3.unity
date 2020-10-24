@@ -3437,6 +3437,7 @@ MonoBehaviour:
   speed: 5
   currentHealth: 100
   healthBar: {fileID: 1586921933}
+  LevelScript: {fileID: 0}
 --- !u!114 &1634675032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3502,7 +3503,7 @@ MonoBehaviour:
   basicZombie: {fileID: 1044539258}
   fastZombie: {fileID: 986193857}
   strongZombie: {fileID: 1071583207}
-  startZombies: 1
+  startZombies: 30
   zombiesAlive: 0
   LevelScript: {fileID: 895028023}
 --- !u!4 &1673956682
