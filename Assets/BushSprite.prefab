@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5559441900548684305}
   - component: {fileID: 5559441900548684302}
   - component: {fileID: 5559441900548684303}
+  - component: {fileID: 3385003644140592888}
   m_Layer: 10
   m_Name: BushSprite
   m_TagString: Untagged
@@ -99,3 +100,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.25
+--- !u!114 &3385003644140592888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5559441900548684300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551d642ec4776254290741d6f7be9813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletDestroy: {fileID: 3892975892585484168, guid: f78e939fdc465a342b780a61d061e112,
+    type: 3}

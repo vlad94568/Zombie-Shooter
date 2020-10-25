@@ -44,6 +44,8 @@ public class PlayerController : MonoBehaviour
 
         if (healthBar.value <= 0)
         {   
+            speed = 0;
+
             int lastLevelLoad = LevelScript.nextLevel;
             LevelScript.nextLevel = 5;
             LevelScript.LoadNextLevel();
