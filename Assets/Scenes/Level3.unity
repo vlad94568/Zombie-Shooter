@@ -3748,9 +3748,10 @@ MonoBehaviour:
   basicZombie: {fileID: 1044539258}
   fastZombie: {fileID: 986193857}
   strongZombie: {fileID: 1071583207}
-  startZombies: 30
+  startZombies: 20
   zombiesAlive: 0
   LevelScript: {fileID: 895028023}
+  player: {fileID: 1634675029}
 --- !u!4 &1673956682
 Transform:
   m_ObjectHideFlags: 0

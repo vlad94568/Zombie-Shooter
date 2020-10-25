@@ -18,6 +18,8 @@ public class GameScript : MonoBehaviour
 
     public LevelLoaderScript LevelScript;
 
+    public Transform player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +37,11 @@ public class GameScript : MonoBehaviour
             {
                 GameObject clone = Instantiate(basicZombie, new Vector3(Random.Range(-22, 32), Random.Range(8, -18)), basicZombie.transform.rotation);
                 clone.SetActive(true);
+
+                if(Vector2.Distance(player.position, clone.transform.position) > 100)
+                {
+                    i -= 1;
+                }
             }
 
             //If statment for the fast zombie.
@@ -43,6 +50,12 @@ public class GameScript : MonoBehaviour
             {
                 GameObject clone = Instantiate(fastZombie, new Vector3(Random.Range(-22, 32), Random.Range(8, -18)), fastZombie.transform.rotation);
                 clone.SetActive(true);
+
+                if(Vector2.Distance(player.position, clone.transform.position) > 100)
+                {
+                    i -= 1;
+                }
+
             }
 
             //If statment for the strong zombie.
@@ -51,7 +64,14 @@ public class GameScript : MonoBehaviour
             {
                 GameObject clone = Instantiate(strongZombie, new Vector3(Random.Range(-22, 32), Random.Range(8, -18)), strongZombie.transform.rotation);
                 clone.SetActive(true);
+
+                if(Vector2.Distance(player.position, clone.transform.position) > 100)
+                {
+                    i -= 1;
+                }
+
             }
+
         }
     }
 

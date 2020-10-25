@@ -2302,6 +2302,7 @@ MonoBehaviour:
   startZombies: 10
   zombiesAlive: 0
   LevelScript: {fileID: 895028023}
+  player: {fileID: 1634675029}
 --- !u!4 &1673956682
 Transform:
   m_ObjectHideFlags: 0
@@ -2530,6 +2531,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1634675029}
+    - target: {fileID: 3656679530438905025, guid: 303a43f71955c5c4ab2159d22022af28,
+        type: 3}
+      propertyPath: maxSpeed
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3656679530438905027, guid: 303a43f71955c5c4ab2159d22022af28,
         type: 3}
       propertyPath: m_Name
